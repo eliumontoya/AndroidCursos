@@ -44,7 +44,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello First fragment</string>
+    <string name="hello_blank_fragment">Hello My First fragment</string>
     <string name="hello_second_fragment">Hello Second fragment</string>
     <string name="ex_hm_ingresa_nombre">Insert your name</string>
     <string name="ex_hm_enviar">Send Name</string>
