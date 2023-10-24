@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="ex_hm_ingresa_nombre">Inserta tu nombre</string>
+    <string name="ex_hm_enviar">Enviar nombre</string>
+</resources>
