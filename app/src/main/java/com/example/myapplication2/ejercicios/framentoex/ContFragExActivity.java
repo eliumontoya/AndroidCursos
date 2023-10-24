@@ -28,7 +28,7 @@ public class ContFragExActivity extends AppCompatActivity {
 
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
-
+//commentarios
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
