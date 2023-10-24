@@ -17,11 +17,7 @@
         <activity
             android:name=".ejercicios.framentoex.ContFragExActivity"
             android:exported="false" />
-        <activity
-            android:name=".ejercicios.framentoex.ContenedorFragEx"
-            android:exported="false"
-            android:label="@string/title_activity_contenedor_frag_ex"
-            android:theme="@style/Theme.MyApplication2" />
+
         <activity
             android:name=".ejercicios.holaMundoEx.ResultadoHolaExActivity"
             android:exported="false" />
