@@ -25,4 +25,10 @@
         android:layout_height="wrap_content"
         android:text="Gravedad" />
 
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camara" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
