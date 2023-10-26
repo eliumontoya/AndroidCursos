@@ -60,7 +60,7 @@ public class HTTPRequestActivity extends AppCompatActivity {
                 return new Callback() {
                     @Override
                     public void onFailure(@NonNull Call call, @NonNull IOException e) {
-
+text_view_result.setText("Hubo un error en la comunicacion");
                     }
 
                     @Override

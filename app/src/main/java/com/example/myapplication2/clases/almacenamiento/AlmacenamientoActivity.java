@@ -48,6 +48,8 @@ public class AlmacenamientoActivity extends AppCompatActivity {
                 String courseDuration = courseDurationEdt.getText().toString();
                 String courseDescription = courseDescriptionEdt.getText().toString();
 
+                CourseModal curso = new CourseModal(courseName,
+                        courseDuration,courseTracks,courseDescription);
                 // validating if the text fields are empty or not.
                 if (courseName.isEmpty() || courseTracks.isEmpty() || courseDuration.isEmpty() || courseDescription.isEmpty()) {
                     Toast.makeText(AlmacenamientoActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
@@ -56,7 +58,7 @@ public class AlmacenamientoActivity extends AppCompatActivity {
 
                 // on below line we are calling a method to add new
                 // course to sqlite data and pass all our values to it.
-                dbHandler.addNewCourse(courseName, courseDuration, courseDescription, courseTracks);
+                dbHandler.addNewCourse(curso);
 
                 // after adding the data we are displaying a toast message.
                 Toast.makeText(AlmacenamientoActivity.this, "Course has been added.", Toast.LENGTH_SHORT).show();
