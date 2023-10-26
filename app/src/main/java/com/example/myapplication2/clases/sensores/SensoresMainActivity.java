@@ -21,6 +21,7 @@ public class SensoresMainActivity extends AppCompatActivity {
 
 
         ( (Button)findViewById(R.id.btnAcelerometro)).setOnClickListener(accelerometro());
+        ( (Button)findViewById(R.id.btnGravity)).setOnClickListener(gravity());
 
     }
 
@@ -34,6 +35,14 @@ public class SensoresMainActivity extends AppCompatActivity {
     private View.OnClickListener listar() {
         return v ->  {
             Intent intent = new Intent(SensoresMainActivity.this,ListarSensoresActivity.class );
+            startActivity(intent);
+        };
+
+    }
+
+    private View.OnClickListener gravity() {
+        return v ->  {
+            Intent intent = new Intent(SensoresMainActivity.this,SensorGravityActivity.class );
             startActivity(intent);
         };
 
