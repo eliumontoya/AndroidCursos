@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,9 +16,11 @@
         android:theme="@style/Theme.MyApplication2"
         tools:targetApi="31">
         <activity
+            android:name=".clases.request.HTTPRequestActivity"
+            android:exported="false" />
+        <activity
             android:name=".ejercicios.framentoex.ContFragExActivity"
             android:exported="false" />
-
         <activity
             android:name=".ejercicios.holaMundoEx.ResultadoHolaExActivity"
             android:exported="false" />

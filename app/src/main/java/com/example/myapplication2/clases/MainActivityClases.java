@@ -12,6 +12,7 @@ import com.example.myapplication2.R;
 import com.example.myapplication2.clases.Fragmentos.ContenedorFragment;
 import com.example.myapplication2.clases.HolaMundo.HolaMundo;
 import com.example.myapplication2.clases.almacenamiento.AlmacenamientoActivity;
+import com.example.myapplication2.clases.request.HTTPRequestActivity;
 
 public class MainActivityClases extends AppCompatActivity {
 
@@ -47,7 +48,23 @@ public class MainActivityClases extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        
+
+
+        Button btnHttpOkRequest = (Button) findViewById(R.id.btnHttpOkRequest);
+        btnHttpOkRequest.setOnClickListener(request());
+
+    }
+
+    private View.OnClickListener request() {
+
+            return new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent( MainActivityClases.this, HTTPRequestActivity.class);
+                    startActivity(intent);
+                }
+            };
+
     }
 
 }
