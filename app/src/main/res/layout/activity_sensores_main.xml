@@ -14,8 +14,8 @@
         android:text="Listar Sensores" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnAcelerometro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Acelerometro" />
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:rotation="0"
+    tools:context=".clases.sensores.SensorAcceleromtroActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        tools:context=".clases.sensores.SensorAcceleromtroActivity">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor X: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            tools:text="23" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        tools:context=".clases.sensores.SensorAcceleromtroActivity">
+
+        <TextView
+            android:id="@+id/textView3y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Y: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            tools:text="23" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        tools:context=".clases.sensores.SensorAcceleromtroActivity">
+
+        <TextView
+            android:id="@+id/textView3z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Z: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            tools:text="23" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

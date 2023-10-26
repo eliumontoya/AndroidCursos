@@ -16,18 +16,26 @@ public class SensoresMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensores_main);
 
-        Button btnListSensors = findViewById(R.id.btnListSensors);
-        btnListSensors.setOnClickListener(listar());
+
+        ( (Button)findViewById(R.id.btnListSensors)).setOnClickListener(listar());
+
+
+        ( (Button)findViewById(R.id.btnAcelerometro)).setOnClickListener(accelerometro());
 
     }
 
-    private View.OnClickListener listar() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SensoresMainActivity.this,ListarSensoresActivity.class );
-                startActivity(intent);
-            }
+    private View.OnClickListener accelerometro() {
+        return v ->  {
+            Intent intent = new Intent(SensoresMainActivity.this,SensorAcceleromtroActivity.class );
+            startActivity(intent);
         };
+    }
+
+    private View.OnClickListener listar() {
+        return v ->  {
+            Intent intent = new Intent(SensoresMainActivity.this,ListarSensoresActivity.class );
+            startActivity(intent);
+        };
+
     }
 }
