@@ -45,5 +45,10 @@
         android:layout_height="wrap_content"
         android:text="Sensores" />
 
+    <Button
+        android:id="@+id/btnNotificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

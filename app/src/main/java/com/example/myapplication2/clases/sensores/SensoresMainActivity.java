@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.myapplication2.R;
+import com.example.myapplication2.clases.notificaciones.NotificacionMainActivity;
 
 public class SensoresMainActivity extends AppCompatActivity {
 
@@ -26,13 +27,13 @@ public class SensoresMainActivity extends AppCompatActivity {
 
     }
 
+
     private View.OnClickListener accelerometro() {
         return v -> {
             Intent intent = new Intent(SensoresMainActivity.this, SensorAcceleromtroActivity.class);
             startActivity(intent);
         };
     }
-
     private View.OnClickListener listar() {
         return v -> {
             Intent intent = new Intent(SensoresMainActivity.this, ListarSensoresActivity.class);
