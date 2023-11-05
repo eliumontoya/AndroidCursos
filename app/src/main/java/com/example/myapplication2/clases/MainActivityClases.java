@@ -12,6 +12,7 @@ import com.example.myapplication2.R;
 import com.example.myapplication2.clases.Fragmentos.ContenedorFragment;
 import com.example.myapplication2.clases.HolaMundo.HolaMundo;
 import com.example.myapplication2.clases.almacenamiento.AlmacenamientoActivity;
+import com.example.myapplication2.clases.cursoApp.AplicacionActivity;
 import com.example.myapplication2.clases.notificaciones.NotificacionMainActivity;
 import com.example.myapplication2.clases.request.HTTPRequestActivity;
 import com.example.myapplication2.clases.sensores.SensoresMainActivity;
@@ -59,7 +60,17 @@ public class MainActivityClases extends AppCompatActivity {
         btnSensores.setOnClickListener(sensores());
 
         ((Button) findViewById(R.id.btnNotificacion)).setOnClickListener(notificacion());
+        ((Button) findViewById(R.id.btnAppCompleta)).setOnClickListener(appCompleta());
 
+
+
+    }
+
+    private View.OnClickListener appCompleta() {
+        return v -> {
+            Intent intent = new Intent(MainActivityClases.this, AplicacionActivity.class);
+            startActivity(intent);
+        };
     }
 
     private View.OnClickListener notificacion() {

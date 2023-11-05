@@ -51,4 +51,11 @@
         android:layout_height="wrap_content"
         android:text="Notificaciones" />
 
+
+    <Button
+        android:id="@+id/btnAppCompleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Completa" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

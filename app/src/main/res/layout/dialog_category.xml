@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/cursoapp_background_app"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etCategoryNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Crear Categoria"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        android:backgroundTint="@color/cursoapp_accent"/>
+
+
+</LinearLayout>

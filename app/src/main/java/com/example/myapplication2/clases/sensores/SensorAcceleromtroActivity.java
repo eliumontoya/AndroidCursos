@@ -32,7 +32,7 @@ public class SensorAcceleromtroActivity extends AppCompatActivity implements Sen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        Log.i("Sensor", "Cambio valores x:" + event.values[0] + " Y:" + event.values[1] + " Y:" + event.values[2]);
+        Log.i("Sensor", "Cambio valores x:" + event.values[0] + " Y:" + event.values[1] + " z:" + event.values[2]);
         tvX = findViewById(R.id.tvX);
         tvY = findViewById(R.id.tvY);
         tvZ = findViewById(R.id.tvZ);

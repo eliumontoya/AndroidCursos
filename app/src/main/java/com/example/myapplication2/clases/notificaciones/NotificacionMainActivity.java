@@ -104,7 +104,7 @@ public class NotificacionMainActivity extends AppCompatActivity {
 
     private Intent crearIntent() {
         Intent intent = new Intent(NotificacionMainActivity.this, HomeNotificacionActivity.class);
-        intent.putExtra("mensaje", "Este es el mensaje que le llego por notificacion ");
+        intent.putExtra("mensaje", "Este es el mensaje que le llego por notificacion sdfsdfasfsd");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         return intent;
     }

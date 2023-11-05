@@ -34,6 +34,7 @@ public class CamaraActivity extends AppCompatActivity {
         return v -> {
             Intent intent = new Intent( MediaStore.ACTION_IMAGE_CAPTURE);
             startActivityForResult(intent, REQ_CODE);
+
         };
     }
 
