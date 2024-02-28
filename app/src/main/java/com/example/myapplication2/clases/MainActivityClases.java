@@ -12,6 +12,7 @@ import com.example.myapplication2.R;
 import com.example.myapplication2.clases.Fragmentos.ContenedorFragment;
 import com.example.myapplication2.clases.HolaMundo.HolaMundo;
 import com.example.myapplication2.clases.almacenamiento.AlmacenamientoActivity;
+import com.example.myapplication2.clases.almacenamientoFirebase.FirebaseActivity;
 import com.example.myapplication2.clases.cursoApp.AplicacionActivity;
 import com.example.myapplication2.clases.notificaciones.NotificacionMainActivity;
 import com.example.myapplication2.clases.request.HTTPRequestActivity;
@@ -70,10 +71,17 @@ public class MainActivityClases extends AppCompatActivity {
         ((Button) findViewById(R.id.btnAppCompleta)).setOnClickListener(appCompleta());
 
 
+        ((Button) findViewById(R.id.btnAlmacenamientoFirebase)).setOnClickListener(almacenamientoFirebase());
+
 
     }
 
-    private View.OnClickListener appCompleta() {
+    private View.OnClickListener almacenamientoFirebase() {
+        return v -> {
+            Intent intent = new Intent(MainActivityClases.this, FirebaseActivity.class);
+            startActivity(intent);
+        };
+    }private View.OnClickListener appCompleta() {
         return v -> {
             Intent intent = new Intent(MainActivityClases.this, AplicacionActivity.class);
             startActivity(intent);

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clases.almacenamientoFirebase.FirebaseActivity">
+
+    <EditText
+        android:id="@+id/idEdtCourseIdFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter course Unique ID" />
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtCourseNameFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter course Name" />
+
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtCourseDurationFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Course Duration" />
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idEdtCourseTracksFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Course Tracks" />
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idEdtCourseDescriptionFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Course Description" />
+
+    <!--button for adding new course-->
+    <Button
+        android:id="@+id/idBtnAddCourseFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add Course"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/idBtnGetCourseFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Get Course"
+        android:textAllCaps="false" />
+    <Button
+    android:id="@+id/idBtnDelCourseFireBase"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="Delete Course"
+    android:textAllCaps="false" />
+
+    <!--new button for opening our course list activity-->
+    <Button
+        android:id="@+id/idBtnReadCourseFireBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Read All Courses"
+        android:textAllCaps="false" />
+
+</LinearLayout>
