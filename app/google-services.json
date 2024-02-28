@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461465473676",
+    "project_id": "cursosejemplos-2fd6e",
+    "storage_bucket": "cursosejemplos-2fd6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461465473676:android:d05729f5fa0185c2e961a9",
+        "android_client_info": {
+          "package_name": "com.example.myapplication2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrkjFBccHQ_RmRZi3xHXI80LnRDQ3iFNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

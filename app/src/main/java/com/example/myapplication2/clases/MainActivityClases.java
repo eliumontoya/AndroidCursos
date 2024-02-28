@@ -16,6 +16,7 @@ import com.example.myapplication2.clases.cursoApp.AplicacionActivity;
 import com.example.myapplication2.clases.notificaciones.NotificacionMainActivity;
 import com.example.myapplication2.clases.request.HTTPRequestActivity;
 import com.example.myapplication2.clases.sensores.SensoresMainActivity;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivityClases extends AppCompatActivity {
 
@@ -23,6 +24,12 @@ public class MainActivityClases extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_clases);
+
+        //Creamos un evento a google Analytics
+        FirebaseAnalytics analytics =  FirebaseAnalytics.getInstance(this);
+        Bundle bundle = new Bundle();
+        bundle.putString("message","Instalado correctamente");
+        analytics.logEvent("MainActivity", bundle);
 
 
         Button holaMundoBtn = (Button) findViewById(R.id.btnHolaMundo);
